@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Snake Game</title>
+    <style>
+      #snake_game {
+        background-color: #000000;
+      }
+      .margin_bottom {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="margin_bottom">
+      <button onclick="start('start')">Start</button>
+      <!-- on restart the the score of food would be fetched from local storage -->
+      <button onclick="start('restart')">Restart</button>
+      Width: <input type="text" id="width">
+      Height: <input type="text" id="height">
+      <div id="displayTimer"></div>
+    </div>
+    <canvas id="snake_game" width="300" height="300"></canvas>
+    <script src="snake.js"></script>
+  </body>
+</html>
